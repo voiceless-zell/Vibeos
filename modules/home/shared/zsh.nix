@@ -18,6 +18,7 @@
     '';
 
     shellAliases = {
+      v = "nvim";
       c = "clear";
       cat = "bat";
       ls = "eza --icons --group-directories-first -1";

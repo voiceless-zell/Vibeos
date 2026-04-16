@@ -14,6 +14,10 @@
 
   programs.home-manager.enable = true;
 
+  programs.zsh.shellAliases = {
+    fl = "cd ~/vibeos/ && v";
+  };
+
   home.packages = with pkgs; [
     bat
     eza
