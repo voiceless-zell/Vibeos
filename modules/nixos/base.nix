@@ -19,5 +19,8 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  security.sudo.enable = true;
+  security.sudo.wheelNeedsPassword = false;
+
   services.openssh.enable = false;
 }
