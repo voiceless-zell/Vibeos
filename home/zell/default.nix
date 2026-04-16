@@ -3,6 +3,8 @@
   imports = [
     ../../modules/home/shared/stylix.nix
     ../../modules/home/shared/nvf.nix
+    ../../modules/home/shared/zsh.nix
+    ../../modules/home/shared/starship.nix
   ];
 
   home.username = "zell";
