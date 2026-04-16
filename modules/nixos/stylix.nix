@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   stylix = {
     enable = true;
     polarity = "dark";
@@ -23,5 +23,12 @@
     };
 
     opacity.terminal = 1.0;
+
+    fonts = {
+      monospace = {
+        package = pkgs.nerd-fonts.jetbrains-mono;
+        name = "JetBrainsMono Nerd Font";
+      };
+    };
   };
 }
