@@ -1,4 +1,4 @@
-{ pkgs, username, homeDirectory, ... }:
+{ pkgs, username, homeDirectory, hostname, ... }:
 {
   imports = [
     ../../modules/home/shared/stylix.nix
@@ -18,6 +18,7 @@
 
   programs.zsh.shellAliases = {
     fl = "cd ~/vibeos/ && v";
+    fr = "nh os switch --hostname ${hostname}";
   };
 
   home.packages = with pkgs; [

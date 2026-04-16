@@ -36,11 +36,12 @@
       mkHomeManager = {
         username,
         homeDirectory,
+        hostname,
       }: {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
         home-manager.extraSpecialArgs = {
-          inherit inputs username homeDirectory;
+          inherit inputs username homeDirectory hostname;
         };
         home-manager.users.${username} = import ./home/${username};
       };
@@ -60,6 +61,7 @@
           (mkHomeManager {
             username = "zell";
             homeDirectory = "/home/zell";
+            hostname = "wsl";
           })
         ];
       };
@@ -78,6 +80,7 @@
           (mkHomeManager {
             username = "zell";
             homeDirectory = "/home/zell";
+            hostname = "gallifrey";
           })
         ];
       };
