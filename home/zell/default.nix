@@ -1,5 +1,10 @@
 { pkgs, ... }:
 {
+  imports = [
+    ../../modules/home/shared/stylix.nix
+    ../../modules/home/shared/nvf.nix
+  ];
+
   home.username = "zell";
   home.homeDirectory = "/home/zell";
 

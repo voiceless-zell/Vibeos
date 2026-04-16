@@ -1,5 +1,9 @@
 { pkgs, ... }:
 {
+  imports = [
+    ./stylix.nix
+  ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   time.timeZone = "America/New_York";
