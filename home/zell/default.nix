@@ -17,7 +17,7 @@
   programs.home-manager.enable = true;
 
   programs.zsh.shellAliases = {
-    fl = "cd ~/vibeos/ && v";
+    fl = "cd /home/zell/.openclaw/workspace/vibeos/ && v";
     fr = "nh os switch --hostname ${hostname}";
   };
 

@@ -6,7 +6,7 @@
       enable = true;
       extraArgs = "--keep-since 7d --keep 5";
     };
-    flake = "/home/zell/vibeos";
+    flake = "/home/zell/.openclaw/workspace/vibeos";
   };
 
   environment.systemPackages = with pkgs; [
