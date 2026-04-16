@@ -36,8 +36,9 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.sharedModules = [
-              stylix.homeManagerModules.stylix
+              stylix.homeModules.stylix
             ];
             home-manager.users.zell = import ./home/zell;
           }
