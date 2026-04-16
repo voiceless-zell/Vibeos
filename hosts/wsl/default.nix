@@ -14,6 +14,5 @@
   users.users.zell = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
-    shell = pkgs.bashInteractive;
   };
 }
