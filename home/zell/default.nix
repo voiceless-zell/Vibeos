@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, username, homeDirectory, ... }:
 {
   imports = [
     ../../modules/home/shared/stylix.nix
@@ -6,10 +6,11 @@
     ../../modules/home/shared/nvf.nix
     ../../modules/home/shared/zsh.nix
     ../../modules/home/shared/starship.nix
+    ../../modules/home/shared/git.nix
   ];
 
-  home.username = "zell";
-  home.homeDirectory = "/home/zell";
+  home.username = username;
+  home.homeDirectory = homeDirectory;
 
   home.stateVersion = "24.11";
 

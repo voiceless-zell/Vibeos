@@ -1,17 +1,17 @@
-{ pkgs, ... }:
+{ username, hostname, ... }:
 {
   imports = [
     ../../modules/nixos/base.nix
   ];
 
-  networking.hostName = "wsl";
+  networking.hostName = hostname;
 
   system.stateVersion = "24.11";
 
   wsl.enable = true;
-  wsl.defaultUser = "zell";
+  wsl.defaultUser = username;
 
-  users.users.zell = {
+  users.users.${username} = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
   };
