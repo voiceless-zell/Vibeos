@@ -2,6 +2,7 @@
 {
   imports = [
     ./stylix.nix
+    ./nh.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
