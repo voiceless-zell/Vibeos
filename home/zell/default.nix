@@ -20,12 +20,15 @@
 
   home.packages = with pkgs; [
     bat
+    cowsay
     eza
     fd
+    lazygit
     ripgrep
   ];
 
   home.sessionVariables = {
-    EDITOR = "nano";
+    EDITOR = "nvim";
+    VISUAL = "nvim";
   };
 }

@@ -19,6 +19,7 @@
 
     shellAliases = {
       v = "nvim";
+      sv = "sudo nvim";
       c = "clear";
       cat = "bat";
       ls = "eza --icons --group-directories-first -1";
